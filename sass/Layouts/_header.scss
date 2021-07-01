@@ -1,0 +1,106 @@
+header {
+    @include styleText($color-black-light, $fs-1, $fw-normal);
+}
+.header__left {
+    display: flex;
+    align-items: center;
+    .navbar-brand {
+        img {
+            width: 110px;
+        }
+    }
+    .header__cate {
+        background-color: white;
+        margin-right: 20px;
+        .udi {
+            color: #8a92a3;
+        }
+    }
+
+    .header__form {
+        flex-grow: 1;
+        .input-group {
+            height: 40px;
+            background: #f2f3f5;
+            border-radius: 1px solid gray;
+
+            .form-control {
+                background-color: #f2f3f5;
+                border: 0px solid #ced4da;
+                position: relative;
+                margin-bottom: 0;
+                border-radius: 2px;
+                font-size: 13px;
+                padding: 20px;
+            }
+            .form-control:focus {
+                background-color: rgb(255, 255, 255);
+                border-color: rgb(222, 223, 224) transparent rgb(222, 223, 224) rgb(222, 223, 224);
+                box-shadow: none;
+            }
+            .input-group-text {
+                background-color: #f2f3f5;
+                border: 0px solid #ced4da;
+                color: $color-red-0;
+            }
+            .input-group-text:hover {
+                color: white;
+                background-color: $color-red-0;
+            }
+        }
+        .input-group:focus{
+            background: white;
+            border-radius: 2px solid gray;
+        }
+    }
+}
+
+.header__right {
+    .header-right-divider {
+        height: 60%;
+        border-left: 1px solid #dedfe0;
+        margin: 10px 10px;
+    }
+    .nav-link {
+        @include styleText($color-black-light, $fs-1, $fw-normal);
+        padding: $pd-2;
+        .icon {
+            color: #8a92a3;
+            margin-left: 20px;
+        }
+    }
+    .ude-btnGroup {
+        white-space: nowrap;
+        padding: 5px 20px;
+    }
+}
+
+// Responsive
+
+header {
+    // 1200px
+    @include responsive("extra-large") {
+        .header__right {
+            .header__business,
+            .header__teach {
+                display: none;
+            }
+        }
+    }
+
+    // 768px
+    @include responsive("medium") {
+        .header__left {
+            justify-content: center;
+            .header__cate,
+            .header__form {
+                display: none;
+            }
+        }
+        .header__right {
+            .ude-btnGroup {
+                display: none;
+            }
+        }
+    }
+}

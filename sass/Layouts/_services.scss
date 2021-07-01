@@ -1,0 +1,35 @@
+.services {
+    background: #f7f8fa;
+    .feedback_list {
+        padding: 24px 0;
+        .mycol {
+            cursor: pointer;
+            padding: 24px 20px;
+            background: white;
+            height: 150px;
+
+            .iconImg {
+                margin: 0 16px 0 0;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .icon_details {
+                h3 {
+                    font-size: 19px;
+                    font-weight: 700;
+                    line-height: 1.47em;
+                }
+                p {
+                    color: #686f7a;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+}
+

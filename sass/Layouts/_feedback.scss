@@ -1,0 +1,147 @@
+.feedBack {
+    background: #f7f8fa;
+    .feedback_content {
+        height: 100%;
+        padding: 32px 16px;
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.33em;
+        }
+        .feedback_list {
+            position: relative;
+            .row {
+                // margin-top: 20px;
+                // padding: 0 15px;
+                padding: 7px 10px;
+            }
+            .mycol {
+                background-color: #fff;
+                border-radius: 3px;
+                box-shadow: 0 1px 3px 0 rgba(20, 23, 28, 0.15);
+                display: flex;
+                flex-direction: column;
+
+                min-height: 230px;
+                padding: 32px 20px;
+                .feedback_infoStudent {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 1.5em;
+                    align-items: center;
+                    margin-bottom: 18px;
+                    .iconImg {
+                        margin-right: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .partners {
+        padding-bottom: 24px;
+        .partners_text {
+            color: #686f7a;
+            font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                apple color emoji, segoe ui emoji, segoe ui symbol;
+            font-size: 13px;
+            padding-top: 16px;
+            text-align: center;
+        }
+        .partners__logos-container {
+            display: flex;
+            justify-content: center;
+
+            .partners__logos {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-top: 32px;
+                .logo {
+                    max-width: none;
+                }
+            }
+        }
+    }
+    .partners {
+        @media (min-width: 992px) {
+            .logo-item {
+                margin: 0px 32px 8px;
+            }
+        }
+        @media (min-width: 768px) {
+            .partners__logos {
+                width: 100%;
+            }
+        }
+    }
+
+    .non-student-cta-wrapper {
+        display: flex;
+        .non-student-cta {
+            display: flex;
+            .non-student-cta__text {
+                max-width: 400px;
+                text-align: center;
+            }
+            .non-student-cta__header {
+                padding-top: 3px;
+                a {
+                    font-size: 19px;
+                    font-weight: 700;
+                    line-height: 1.47em;
+                    color: rgb(80, 87, 99);
+                }
+            }
+            .non-student-cta__content {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5em;
+                padding-top: 3px;
+            }
+            .non-student-cta__link {
+                a {
+                    margin-top: 1em;
+                }
+                .btn-primary {
+                    color: #fff;
+                    background-color: #ec5252;
+                    border: 1px solid transparent;
+                }
+                .btn {
+                    display: inline-block;
+                    margin-bottom: 0;
+                    font-weight: 700;
+                    text-align: center;
+                    vertical-align: middle;
+                    touch-action: manipulation;
+                    cursor: pointer;
+                    background-image: none;
+                    // border: 1px solid transparent;
+                    white-space: nowrap;
+                    padding: 11px 12px;
+                    font-size: 15px;
+                    line-height: 1.35135;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .non-student-cta-wrapper {
+            flex-direction: row;
+            padding-bottom: 22px;
+            .non-student-cta {
+                flex-grow: 1;
+                justify-content: center;
+                padding: 28px 30px;
+            }
+            .non-student-cta:first-of-type {
+                border-bottom: none;
+                border-right: 1px solid rgb(222, 223, 224);
+                padding: 28px 30px;
+            
+            
+        }
+        }
+    }
+}

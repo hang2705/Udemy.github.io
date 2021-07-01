@@ -1,0 +1,53 @@
+.student {
+    width: 100%;
+    padding: 20px 70px;
+
+    .text {
+       
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 1.47em;
+        color: $color-black-light;
+       
+    }
+    .tab-content {
+        position: relative;
+        
+        .card {
+            box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+        }
+        .card-title {
+            @include styleText($color-black-0, $fs-0, $fw-bold-1);
+            margin-bottom: $mg-1;
+        }
+        .card-text {
+            @include styleText($color-gray-4, $fs-1 - 1, $fw-normal);
+            margin-bottom: $mg-1 + 4;
+        }
+        .courses__rating {
+            display: flex;
+            .courses__star {
+                margin-right: $mg-1 - 5;
+                @include styleText($color-yellow, $fs-1, $fw-normal);
+            }
+            span:nth-child(2) {
+                margin-right: $mg-1 - 5;
+                @include styleText($color-black-0, $fs-1, $fw-bold-1);
+            }
+            span:last-child {
+                @include styleText($color-gray-4, $fs-1 - 1, $fw-normal);
+            }
+        }
+        .courses__price {
+            text-align: right;
+            .old-price {
+                @include styleText($color-gray-4, $fs-1, $fw-normal);
+                text-decoration: line-through;
+                margin-right: $mg-1;
+            }
+            .new-price {
+                @include styleText($color-black-0, $fs-2 - 2, $fw-bold-1);
+            }
+        }
+    }
+}
